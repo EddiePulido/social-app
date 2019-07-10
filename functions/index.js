@@ -15,7 +15,7 @@ app.post('/post', FBAuth, postOnePost);
 // Users routes
 app.post('/signup', signup);
 app.post('/login', login);
-app.post('/user/image', uploadImage);
+app.post('/user/image',FBAuth, uploadImage);
 
 
 
